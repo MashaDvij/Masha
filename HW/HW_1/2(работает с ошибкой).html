@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Дано целое число, лежащее в диапазоне от -999 до 999. Вывести словесное описание данного числа</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		var  a = prompt("Число от -999 до 999:");
+
+		if (a>-1000 && a<-101){
+			console.log("3-х значное отрицательное");
+		} 
+		else if (a>99 && a<1000){
+			console.log("3-х значное положительное");
+		} 
+		else if (a<-9 && a>-100){
+			console.log("2-х значное отрицательное");
+		} 
+		else if (a>9 && a<100){
+			console.log("2-х значное положительное");
+		} 
+		else if (a<0 && a>-10){
+			console.log("1-о значное отрицательное");
+		} 
+		else if (a>0 && a<10){
+			console.log("1-о значное положительное");
+		} 
+		else if (a===0){
+			console.log("ноль");
+		} 
+		else{
+			console.log("default");
+		}
+
+	</script>
+	
+</body>
+</html>

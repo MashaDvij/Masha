@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var num = +prompt("Enter a number:");
+		var i = 0;
+
+		while(num > 0){
+			i+= num%10;
+			
+			num = num/10;
+			num = Math.floor(num);
+		
+		}
+
+		alert(i);	
+
+	</script>
+	
+</body>
+</html>
